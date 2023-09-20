@@ -1,0 +1,317 @@
+html {
+    background-color: #e6e6e6;
+    overflow-x: hidden; /* отключает горизонтальный скролл */
+    overflow-y: scroll; /* включает вертикальный скролл */
+}
+
+a {
+  color: #f6f6f6;
+}
+
+.d2 {
+position:absolute;
+background: #d7253f;
+width: 30px;
+height: 25px;
+top: 100px;
+}
+
+.menu{
+position:relative;
+padding: 30px 30px;
+width: 101%;
+right: 1%;
+top: 0%;
+font-family: 'Open Sans Condensed', sans-serif;
+
+}
+.menu-3{
+background: #1c1c1c;
+
+}
+.menu ul{
+list-style: none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.menu li{
+display: inline-block;
+margin: 0 15px;
+}
+.menu a{
+font-size: 22px;
+text-transform: uppercase;
+text-decoration: none;
+color: #fff;
+display: block;
+position: relative;
+padding: 4px 0;
+}
+.menu a::before{
+content: "";
+width: 100%;
+height: 3px;
+position: absolute;
+left: 0;
+bottom: 0;
+background: #fff;
+transition: 0.5s transform ease;
+transform: scale3d(0,1,1);
+transform-origin: 0 50%;
+}
+.menu a:hover::before{
+transform: scale3d(1,1,1);
+}
+
+
+
+
+.searchh {
+position: absolute;
+top: 200px;
+width: 350px;
+height: 50px;
+left: -200px;
+font-size: 30px;
+}
+
+/*Поиск*/
+* {box-sizing: border-box;}
+body{margin: 0;}
+div {padding: 30px 0}
+form {
+position: relative;
+width: 300px;
+margin: 0 auto;
+left: 30%;
+top: -100px;
+}
+
+
+.search {
+position: absolute;
+top: 35px;
+width: 250px;
+height: 30px;
+left: 200px;
+font-size: 20px;
+}
+
+
+
+body{
+font-family: 'Nunito', sans-serif;
+}
+
+.container{
+position: absolute;
+ left: 10%;
+ top: 4%;
+ transform: translate(-50%, -50%);
+.check{
+  display:none;
+}
+.btn{
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #d7253f;
+  display: inline-block;
+  padding: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-radius: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size:14px;
+  transition: all .3s ease;
+  .mo{
+    position:relative;
+    overflow:hidden;
+    bottom: -150px;
+    width:0px;
+    height:0px;
+    text-align:center;
+    display: inline-block;
+     opacity:0;
+    color: #272727;
+  }
+  &:before{
+    width:0%;
+    position: absolute;
+    left:0;
+    bottom:3px;
+    height: 5px;
+    background-color: #d7253f;
+    content: "";    
+  }
+  &:after{
+    width:100%;
+    height:0%;
+    position:absolute;
+    bottom:3px;
+    left:0;
+    background-color: #d7253f;
+    content: "Download complete";
+    overflow:hidden;
+    text-align:center;
+    line-height: 180px;
+  }
+  
+  &:hover{
+    background-color: #d7253f;
+  }
+}
+input[type=checkbox]:checked ~ .btn{
+    background: #ddced9;
+    border-radius: 0px;
+    border: none;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 200px;
+    padding-right: 200px;
+    transition: all .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    
+    &:before{
+      width:100%;
+      content: "";
+      color: #fff;
+      text-align: center;
+      line-height: 70px;
+      transition: all 3.5s linear;
+    }
+    .me{
+      display:none;
+    }
+    .mo{
+      transition:bottom .4s ease, opacity 1s ease;
+      transition-delay:.3s;
+      height: auto;
+      width:auto;
+      bottom: 0px;
+      opacity: 1;
+    }
+  }
+}
+/* FAQ страница */
+
+/* Текст под картинками */
+p.Sova {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 27%;
+  font-weight: 600;
+}
+p.Iora {
+  position: absolute;
+  margin-left: 850px;
+  margin-top: 630px;
+  font-weight: 600;
+}
+p.Saifer {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 44%;
+  font-weight: 600;
+}
+p.Seig {
+  position: absolute;
+  margin-left: 850px;
+  margin-top: 44%;
+  font-weight: 600;
+}
+p.Viper {
+  position: absolute;
+  margin-left: 13%;
+  margin-top: 65%;
+  font-weight: 600;
+}
+p.Neon {
+  position: absolute;
+  margin-left: 37%;
+  margin-top: 65%;
+  font-weight: 600;
+}
+
+.photo {
+  width: 100px;
+  -webkit-filter: drop-shadow(1px 1px 1px #000000);
+  filter: drop-shadow(0px 0px 4px #000000);
+}
+
+/* End */
+
+.left_block {
+  position:absolute;
+  top: 94px;
+  width: 200px;
+  height: 185%;
+  background-color: #d7253f;
+  -webkit-filter: drop-shadow(1px 1px 1px #000000);
+  filter: drop-shadow(0px 0px 4px #000000);
+
+}
+.voting{
+  position: absolute;
+  left: 65%;
+  top: 300px;
+  width: 350px;
+  height: 40%;
+  background-color: #d72540;
+  -webkit-filter: drop-shadow(1px 1px 1px #000000);
+  filter: drop-shadow(0px 0px 4px #000000);
+
+}
+
+/* Текст сраницы (его расположение) */
+p.text {
+  padding-left:300px; /*Сдвиг влево*/
+  line-height:40%;
+} 
+p.heading {
+  padding-left: 300px;
+  font-weight: 500;
+}
+
+p.search {
+  left: 65%;
+  top: 65%;
+  line-height: 40px;
+  
+   }
+
+/* ПАГИНАЦИЯ */
+ul.pagination {
+  position: absolute;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  top: 1920px;
+  left: 900px;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+  color: black;
+  float: left;
+  padding: 20px 28px;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+
+
+ul.pagination li a:hover:not(.active) {background-color: #d7253f;}
+
+/*Подвал*/
+.podvoal {
+  position: absolute;
+  top: 2000px;
+  width: 101%;
+  height: 200px;
+  background-color: #000000;
+}
+
